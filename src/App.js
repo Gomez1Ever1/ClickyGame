@@ -1,14 +1,13 @@
 import React from 'react';
 import Game from './components/Game';
-import Wrapper from './components/Wrapper';
 import './App.css';
+import { scoreProvider } from './utils/Provider';
 
 function App() {
   return (
-    <Wrapper >
-      <Game>
-      </Game>
-    </Wrapper>
+    <scoreProvider>
+      <Game />
+    </scoreProvider>
   );
 }
 

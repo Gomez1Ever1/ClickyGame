@@ -6,11 +6,11 @@ function ClickItem(props) {
         <div
             className={props.id}
             data-checked={props.checked}
-            onClick={() => props.handleClick(props.id)}
         >
             <img
                 key={props.id}
-                src={props.src}></img>
+                alt={props.id}
+                src={props.src} />
         </div>
 
     )
