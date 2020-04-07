@@ -2,8 +2,9 @@ import React from 'react';
 
 function Navbar(props) {
     return (<nav className="navbar">
-        Score: {props.score}
-        TopScore: {props.topScore}
+        <h1>Score: {props.score}</h1>
+
+        <h1>Top Score: {props.topScore}</h1>
     </nav >
     )
 }

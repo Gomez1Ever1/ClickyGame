@@ -3,14 +3,14 @@ import React from 'react';
 
 function ClickItem(props) {
     return (
-        <div
-            className={props.id}
+        <div className="col-4"
             data-checked={props.checked}
-        >
+            onClick={() => props.handleClick}>
             <img
+                className="img-fluid"
                 key={props.id}
                 alt={props.id}
-                src={props.src} />
+                src={props.href} />
         </div>
 
     )
